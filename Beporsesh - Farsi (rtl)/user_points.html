@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs -->
+	<meta charset="utf-8">
+	<title>بپرسش | امتیازات کاربر</title>
+	<meta name="description" content="امتیازات کاربر">
+	<meta name="author" content="رزمارک">
+	
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Main Style -->
+	<link rel="stylesheet" href="style.css">
+	
+	<!-- Skins -->
+	<link rel="stylesheet" href="css/skins/skins.css">
+	
+	<!-- Responsive Style -->
+	<link rel="stylesheet" href="css/responsive.css">
+	
+	<!-- RTL Style -->
+	<link rel="stylesheet" href="rtl.css">
+	
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="images\beporseshFavicon-y2.png">
+  
+</head>
+<body>
+
+<div class="loader"><div class="loader_html"></div></div>
+
+<div id="wrap" class="grid_1200">
+	
+	<div class="login-panel">
+		<section class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="page-content">
+						<h2>ورود</h2>
+						<div class="form-style form-style-3">
+							<form>
+								<div class="form-inputs clearfix">
+									<p class="login-text">
+										<input type="text" value="نام کاربری" onfocus="if (this.value == 'نام کاربری') {this.value = '';}" onblur="if (this.value == '') {this.value = 'نام کاربری';}">
+										<i class="icon-user"></i>
+									</p>
+									<p class="login-password">
+										<input type="password" value="رمز عبور" onfocus="if (this.value == 'رمز عبور') {this.value = '';}" onblur="if (this.value == '') {this.value = 'رمز عبور';}">
+										<i class="icon-lock"></i>
+										<a href="#">فراموشی</a>
+									</p>
+								</div>
+								<p class="form-submit login-submit">
+									<input type="submit" value="ورود" class="button color small login-submit submit">
+								</p>
+								<div class="rememberme">
+									<label><input type="checkbox" checked="checked">مرا بخاطر بسپار</label>
+								</div>
+							</form>
+						</div>
+					</div><!-- End page-content -->
+				</div><!-- End col-md-6 -->
+				<div class="col-md-6">
+					<div class="page-content Register">
+						<h2>الان ثبت نام کنید</h2>
+						<p>هنوز عضو نشدی؟</br>
+							نگرانی؟ خجالت می کشی سوال بپرسی؟ نمی دونی کی بهتر راهنمایی میکنه؟ به هیچکس اطمینان نداری؟ می خوای از متخصصش بپرسی؟ می خوای سوالاتو راحت بپرسی؟ دنبال جواب درست و فوری میگردی؟ منتظر چی هستی؟ رایگان ثبت نام کن و رایگان بپرس.</p>
+						<a class="button color small signup">ایجاد حساب کاربری</a>
+					</div><!-- End page-content -->
+				</div><!-- End col-md-6 -->
+			</div>
+		</section>
+	</div><!-- End login-panel -->
+	
+	<div class="panel-pop" id="signup">
+		<h2>ثبت نام<i class="icon-remove"></i></h2>
+		<div class="form-style form-style-3">
+			<form>
+				<div class="form-inputs clearfix">
+					<p>
+						<label class="required">نام کاربری<span>*</span></label>
+						<input type="text">
+					</p>
+					<p>
+						<label class="required">ایمیل<span>*</span></label>
+						<input type="email">
+					</p>
+					<p>
+						<label class="required">رمز عبور<span>*</span></label>
+						<input type="password" value="">
+					</p>
+					<p>
+						<label class="required">تکرار رمز عبور<span>*</span></label>
+						<input type="password" value="">
+					</p>
+				</div>
+				<p class="form-submit">
+					<input type="submit" value="ارسال" class="button color small submit">
+				</p>
+			</form>
+		</div>
+	</div><!-- End signup -->
+	
+	<div class="panel-pop" id="lost-password">
+		<h2>فراموشی رمز عبور<i class="icon-remove"></i></h2>
+		<div class="form-style form-style-3">
+			<p>رمز عبور را فراموش کرده اید؟ لطفا نام کاربری و آدرس ایمیل خود را وارد کنید. سپس لینک ایجاد رمز جدید از طریق ایمیل برایتان ارسال خواهد شد.</p>
+			<form>
+				<div class="form-inputs clearfix">
+					<p>
+						<label class="required">نام کاربری<span>*</span></label>
+						<input type="text">
+					</p>
+					<p>
+						<label class="required">ایمیل<span>*</span></label>
+						<input type="email">
+					</p>
+				</div>
+				<p class="form-submit">
+					<input type="submit" value="ارسال" class="button color small submit">
+				</p>
+			</form>
+			<div class="clearfix"></div>
+		</div>
+	</div><!-- End lost-password -->
+	
+	<div id="header-top">
+		<section class="container clearfix">
+			<nav class="header-top-nav">
+				<ul>
+					<li><a href="contact_us.html"><i class="icon-envelope"></i>تماس با ما</a></li>
+					<li><a href="#"><i class="icon-headphones"></i>پشتیبانی</a></li>
+					<li><a href="login.html" id="login-panel"><i class="icon-user"></i>ورود اعضاء</a></li>
+				</ul>
+			</nav>
+			<div class="header-search">
+				<form>
+				    <input type="text" value="جستجو ..." onfocus="if(this.value=='جستجو ...')this.value='';" onblur="if(this.value=='')this.value='جستجو ...';">
+				    <button type="submit" class="search-submit"></button>
+				</form>
+			</div>
+		</section><!-- End container -->
+	</div><!-- End header-top -->
+	<header id="header">
+		<section class="container clearfix">
+			<div class="logo"><a href="index.html"><img alt="" src="images/logo2.png"></a></div>
+			<nav class="navigation">
+				<ul>
+					<li><a href="index.html">خانه</a></li>
+					<li class="ask_question"><a href="ask_question.html">بپرسش</a></li>
+					<li><a href="single_question.html">سوالات</a href="single_question.html">
+						<ul>
+							<li><a href="single_question.html">سوالات عادی</a></li>
+							<li><a href="single_question_poll.html">سوالات چند جوابی</a></li>
+						</ul>
+					</li>
+					<li class="current_page_item"><a href="user_profile.html">کاربر</a>
+						<ul>
+							<li><a href="user_profile.html">پروفایل کاربری</a></li>
+							<li><a href="user_questions.html">سوالات کاربر</a></li>
+							<li><a href="user_answers.html">پاسخ های کاربر</a></li>
+							<li><a href="user_favorite_questions.html">سوالات منتخب</a></li>
+							<li class="current_page_item"><a href="user_points.html">امتیازات کاربر</a></li>
+							<li><a href="edit_profile.html">ویرایش پروفایل</a></li>
+						</ul>
+					</li>
+					<li><a href="#">مقالات</a></li>
+					<li><a href="right_sidebar.html">صفحات</a>
+						<ul>
+							<li><a href="login.html">ورود</a></li class="current_page_item">
+							<li><a href="contact_us.html">تماس با ما</a></li>
+							<li><a href="ask_question.html">بپرسش</a></li>
+						</ul>
+					</li class="current_page_item">
+				</ul>
+			</nav>
+		</section><!-- End container -->
+	</header><!-- End header -->
+	
+	<div class="breadcrumbs">
+		<section class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>امتیازات کاربر</h1>
+				</div>
+				<div class="col-md-12">
+					<div class="crumbs">
+						<a href="#">خانه</a>
+						<span class="crumbs-span">/</span>
+						<a href="#">کاربر</a>
+						<span class="crumbs-span">/</span>
+						<span class="current">امتیازات کاربر</span>
+					</div>
+				</div>
+			</div><!-- End row -->
+		</section><!-- End container -->
+	</div><!-- End breadcrumbs -->
+	
+	<section class="container main-content">
+		<div class="row">
+			<div class="col-md-9">
+				<div class="row">
+					<div class="user-profile">
+						<div class="col-md-12">
+							<div class="page-content">
+								<h2>شایان محمودی</h2>
+								<div class="user-profile-img"><img width="60" height="60" src="images/shayanmahmoudi.jpg" alt="شایان محمودی"></div>
+								<div class="ul_list ul_list-icon-ok about-user">
+									<ul>
+										<li class="registe-user"><i class="icon-plus"></i>تاریخ عضویت : <span>28 اسفند 1377</span></li>
+										<li><i class="icon-map-marker"></i>کشور : <span>ایران</span></li>
+										<li><i class="icon-globe"></i>وبسایت شخصی : <a target="_blank" href="http://www.rosemark.co">www.rosemark.co</a></li>
+									</ul>
+								</div>
+								<p>سلام من شایان محمودی هستم. طراح و برنامه نویس فول استک جاوا. دارای رزومه بین المللی  هستم. ضمینه فعالیت فعلیم مشخص نیست</p>
+								<div class="clearfix"></div>
+								<span class="user-follow-me">مرا دنبال کنید</span>
+								<a href="#" original-title="Facebook" class="tooltip-n">
+									<span class="icon_i">
+										<span class="icon_square" icon_size="30" span_bg="#3b5997" span_hover="#2f3239">
+											<i class="social_icon-facebook"></i>
+										</span>
+									</span>
+								</a>
+								<a href="#" original-title="Twitter" class="tooltip-n">
+									<span class="icon_i">
+										<span class="icon_square" icon_size="30" span_bg="#00baf0" span_hover="#2f3239">
+											<i class="social_icon-twitter"></i>
+										</span>
+									</span>
+								</a>
+								<a href="#" original-title="Linkedin" class="tooltip-n">
+									<span class="icon_i">
+										<span class="icon_square" icon_size="30" span_bg="#006599" span_hover="#2f3239">
+											<i class="social_icon-linkedin"></i>
+										</span>
+									</span>
+								</a>
+								<a href="#" original-title="Google plus" class="tooltip-n">
+									<span class="icon_i">
+										<span class="icon_square" icon_size="30" span_bg="#c43c2c" span_hover="#2f3239">
+											<i class="social_icon-gplus"></i>
+										</span>
+									</span>
+								</a>
+								<a href="#" original-title="Email" class="tooltip-n">
+									<span class="icon_i">
+										<span class="icon_square" icon_size="30" span_bg="#000" span_hover="#2f3239">
+											<i class="social_icon-email"></i>
+										</span>
+									</span>
+								</a>
+							</div><!-- End page-content -->
+						</div><!-- End col-md-12 -->
+						<div class="col-md-12">
+							<div class="page-content page-content-user-profile">
+								<div class="user-profile-widget">
+									<h2>وضعیت کاربر</h2>
+									<div class="ul_list ul_list-icon-ok">
+										<ul>
+											<li><i class="icon-question-sign"></i><a href="user_questions.html">سوالات<span> ( <span>26</span> ) </span></a></li>
+											<li><i class="icon-comment"></i><a href="user_answers.html">پاسخ ها<span> ( <span>39</span> ) </span></a></li>
+											<li><i class="icon-star"></i><a href="user_favorite_questions.html">سوالات مورد علاقه<span> ( <span>3</span> ) </span></a></li>
+											<li><i class="icon-heart"></i><a href="user_points.html">امتیاز<span> ( <span>25</span> ) </span></a></li>
+											<li><i class="icon-asterisk"></i>پاسخ منتخب<span> ( <span>2</span> ) </span></li>
+										</ul>
+									</div>
+								</div><!-- End user-profile-widget -->
+							</div><!-- End page-content -->
+						</div><!-- End col-md-12 -->
+					</div><!-- End user-profile -->
+				</div><!-- End row -->
+				<div class="clearfix"></div>
+				<div class="page-content page-content-user">
+					<div class="user-questions">
+						<article class="question user-question user-points">
+							<div class="question-content">
+								<div class="question-bottom">
+									<h3><a href="#">امتیازدهی به پاسخ شما</a></h3>
+									<div class="question-user-vote"><i class="icon-thumbs-up"></i></div>
+									<div class="question-vote-result">+1</div>
+									<span class="question-date"><i class="icon-time"></i>15 ثانیه پیش</span>
+								</div>
+							</div>
+						</article>
+						<article class="question user-question user-points">
+							<div class="question-content">
+								<div class="question-bottom">
+									<h3><a href="#">پاسخ به سوال</a></h3>
+									<div class="question-user-vote"><i class="icon-thumbs-up"></i></div>
+									<div class="question-vote-result">+2</div>
+									<span class="question-date"><i class="icon-time"></i>4 دقیقه پیش</span>
+								</div>
+							</div>
+						</article>
+						<article class="question user-question user-points">
+							<div class="question-content">
+								<div class="question-bottom">
+									<h3><a href="#">لغو پاسخ شما به عنوان پاسخ منتخب</a></h3>
+									<div class="question-user-vote"><i class="icon-thumbs-up"></i></div>
+									<div class="question-vote-result">-5</div>
+									<span class="question-date"><i class="icon-time"></i>1 ساعت پیش</span>
+								</div>
+							</div>
+						</article>
+						<article class="question user-question user-points">
+							<div class="question-content">
+								<div class="question-bottom">
+									<h3><a href="#">انتخاب پاسخ شما به عنوان پاسخ منتخب</a></h3>
+									<div class="question-user-vote"><i class="icon-thumbs-up"></i></div>
+									<div class="question-vote-result">+5</div>
+									<span class="question-date"><i class="icon-time"></i>2 ساعت پیش</span>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+				
+				<div class="height_20"></div>
+				
+				<div class="pagination">
+				    <a href="#" class="prev-button"><i class="icon-angle-left"></i></a>
+				    <span class="current">1</span>
+				    <a href="#">2</a>
+				    <a href="#">3</a>
+				    <a href="#">4</a>
+				    <a href="#">5</a>
+				    <span>...</span>
+				    <a href="#">11</a>
+				    <a href="#">12</a>
+				    <a href="#">13</a>
+				    <a href="#" class="next-button"><i class="icon-angle-right"></i></a>
+				</div><!-- End pagination -->
+				<!-- if no questions
+				<p>No questions yet</p>
+				-->
+			</div><!-- End main -->
+			<aside class="col-md-3 sidebar">			
+				<div class="widget widget_social">
+					<h3 class="widget_title">در ارتباط باشیم</h3>
+					<ul>
+						<li class="rss-subscribers">
+							<a href="#" target="_blank">
+							<strong>
+								<i class="icon-rss"></i>
+								<span>دریافت</span><br>
+								<small> آخرین مطالب ما</small>
+							</strong>
+							</a>
+						</li>
+						<li class="facebook-fans">
+							<a href="#" target="_blank">
+							<strong>
+								<i class="social_icon-facebook"></i>
+								<span>6,000</span><br>
+								<small>دنبال کننده</small>
+							</strong>
+							</a>
+						</li>
+						<li class="twitter-followers">
+							<a href="#" target="_blank">
+							<strong>
+								<i class="social_icon-twitter"></i>
+								<span>3,000</span><br>
+								<small>دنبال کننده</small>
+							</strong>
+							</a>
+						</li>
+						<li class="youtube-subs">
+							<a href="#" target="_blank">
+							<strong>
+								<img src="D:\Argin\Webdesign\Projects\Beporsesh\Beporsesh - Ask that\Beporsesh - Farsi (rtl)\images\iconaparat.png" class="iconaparat" ></img>
+								<span>1,000</span><br>
+								<small>دنبال کننده</small>
+							</strong>
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="widget widget_login">
+					<h3 class="widget_title">ورود</h3>
+					<div class="form-style form-style-2">
+						<form>
+							<div class="form-inputs clearfix">
+								<p class="login-text">
+									<input type="text" value="نام کاربری" onfocus="if (this.value == 'نام کاربری') {this.value = '';}" onblur="if (this.value == '') {this.value = 'نام کاربری';}">
+									<i class="icon-user"></i>
+								</p>
+								<p class="login-password">
+									<input type="password" value="رمز عبور" onfocus="if (this.value == 'رمز عبور') {this.value = '';}" onblur="if (this.value == '') {this.value = 'رمز عبور';}">
+									<i class="icon-lock"></i>
+									<a href="#">فراموشی</a>
+								</p>
+							</div>
+							<p class="form-submit login-submit">
+								<input type="submit" value="ورود" class="button color small login-submit submit">
+							</p>
+							<div class="rememberme">
+								<label><input type="checkbox" checked="checked">مرا بخاطر بسپار</label>
+							</div>
+						</form>
+						<ul class="login-links login-links-r">
+							<li><a href="#">ثبت نام</a></li>
+						</ul>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				
+				<div class="widget widget_highest_points">
+					<h3 class="widget_title">بیشترین امتیاز</h3>
+					<ul>
+						<li>
+							<div class="author-img">
+								<a href="#"><img width="60" height="60" src="D:\Argin\Webdesign\Projects\Beporsesh\Beporsesh - Ask that\Beporsesh - Farsi (rtl)\images\hessamghafari.jpg" alt=""></a>
+							</div> 
+							<h6><a href="#">حسام غفاری</a></h6>
+							<span class="comment">19 امتیاز</span>
+						</li>
+						<li>
+							<div class="author-img">
+								<a href="#"><img width="60" height="60" src="D:\Argin\Webdesign\Projects\Beporsesh\Beporsesh - Ask that\Beporsesh - Farsi (rtl)\images\saeidnavab.jpg" alt=""></a>
+							</div> 
+							<h6><a href="#">سعید نواب</a></h6>
+							<span class="comment">16 امتیاز</span>
+						</li>
+						<li>
+							<div class="author-img">
+								<a href="#"><img width="60" height="60" src="D:\Argin\Webdesign\Projects\Beporsesh\Beporsesh - Ask that\Beporsesh - Farsi (rtl)\images\setarehmahmoudinia.jpg" alt=""></a>
+							</div> 
+							<h6><a href="#">ستاره محمودی نیا</a></h6>
+							<span class="comment">7 امتیاز</span>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="widget widget_tag_cloud">
+					<h3 class="widget_title">تگ های پر کاربرد</h3>
+					<a href="#">عمومی</a>
+					<a href="#">موسیقی</a>
+					<a href="#">سیاسی</a>
+					<a href="#">اجتماعی</a>
+					<a href="#">سکسولوژی</a>
+					<a href="#">هنری</a>
+					<a href="#">مد و فشن</a>
+					<a href="#">تکنولوژی</a>
+				</div>
+				
+				
+				
+			</aside><!-- End sidebar -->
+		</div><!-- End row -->
+	</section><!-- End container -->
+	
+	<footer id="footer">
+		<section class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="widget widget_contact">
+						<h3 class="widget_title">ما کی هستیم؟</h3>
+						<p>استارت آپ بپرسش جهت سهولتِ یافتن پاسخ های سوالات</br> شما عزیزان به وجود آمده تا بتواند مرجعی برای گردهمایی</br> مردم ایرانی جهت کمک به پاسخ سوالات یکدیگر باشد.</p>
+						<ul>
+							<li>
+								<span>آدرس :</span>
+								تهران، زعفراینه، خیابان مقدس اردبیلی، جنب پالادیوم،</br>
+								پلاک 96، طبقه یک، واحد یک
+							</li>
+							<li>
+								<span>پشتیبانی :</span>شماره تماس تیم پشتیبانی : 22011907 (21+) </br>
+							آدرس ایمیل تیم پشتیبانی : info@rosemark.co</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="col-md-3">
+					<div class="widget">
+						<h3 class="widget_title">سوالات متداول</h3>
+						<ul class="related-posts">
+							<li class="related-item">
+								<h3><a href="#">آیا می توان بدون ثبت نام در سایت سوال پرسید؟</a></h3>
+								<p>خیر. برای پرسیدن سوال می بایست هویت کسی که می پرسد مشخص باشد. این کار در پاسخ سوال تاثیر زیادی دارد</p>
+							</li>
+							<li class="related-item">
+								<h3><a href="#">آیا می توان بدون ثبت نام در سایت سوال پرسید؟</a></h3>
+								<p>خیر. برای پرسیدن سوال می بایست هویت کسی که می پرسد مشخص باشد. این کار در پاسخ سوال تاثیر زیادی دارد</p>
+							</li>
+							
+						</ul>
+					</div>	
+				</div>
+				<div class="col-md-3">
+					<div class="widget">
+						<h3 class="widget_title">&nbsp;</h3>
+						<ul class="related-posts">
+							<li class="related-item">
+								<h3><a href="#">آیا می توان بدون ثبت نام در سایت سوال پرسید؟</a></h3>
+								<p>خیر. برای پرسیدن سوال می بایست هویت کسی که می پرسد مشخص باشد. این کار در پاسخ سوال تاثیر زیادی دارد</p>
+							</li>
+							<li class="related-item">
+								<h3><a href="#">آیا می توان بدون ثبت نام در سایت سوال پرسید؟</a></h3>
+								<p>خیر. برای پرسیدن سوال می بایست هویت کسی که می پرسد مشخص باشد. این کار در پاسخ سوال تاثیر زیادی دارد</p>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+				
+			</div><!-- End row -->
+		</section><!-- End container -->
+	</footer><!-- End footer -->
+	<footer id="footer-bottom">
+		<section class="container">
+			<img class="copyrights f_left">تمامی حقوق متعلق به وبسایت بپرسش می باشد، کپی رایت © 2020  | <a href="http://rosemark.co">طراحی &nbsp; <img src="D:\Argin\Webdesign\Projects\Beporsesh\Beporsesh - Ask that\Beporsesh - Farsi (rtl)\images\rosemarkFooterLogo.png" class="footerroselogo"</img></a></div>
+			<div class="social_icons f_right">
+				<ul> &nbsp;
+					<li class="twitter"><a original-title="Twitter" class="tooltip-n" href="#"><i class="social_icon-twitter font17"></i></a></li>
+					<li class="facebook"><a original-title="Facebook" class="tooltip-n" href="#"><i class="social_icon-facebook font17"></i></a></li>
+					<li class="gplus"><a original-title="Google plus" class="tooltip-n" href="#"><i class="social_icon-gplus font17"></i></a></li>
+					<li class="youtube"><a original-title="Youtube" class="tooltip-n" href="#"><i class="social_icon-youtube font17"></i></a></li>
+					<li class="rss"><a original-title="Rss" class="tooltip-n" href="#"><i class="social_icon-rss font17"></i></a></li>
+
+				</ul>
+			</div><!-- End social_icons -->
+		</section><!-- End container -->
+	</footer><!-- End footer-bottom -->
+</div><!-- End wrap -->
+
+<div class="go-up"><i class="icon-chevron-up"></i></div>
+
+<!-- js -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="js/jquery.easing.1.3.min.js"></script>
+<script src="js/html5.js"></script>
+<script src="js/twitter/jquery.tweet.js"></script>
+<script src="js/jflickrfeed.min.js"></script>
+<script src="js/jquery.inview.min.js"></script>
+<script src="js/jquery.tipsy.js"></script>
+<script src="js/tabs.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script src="js/jquery.scrollTo.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/tags.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/custom-ar.js"></script>
+<!-- End js -->
+
+</body>
+</html>
